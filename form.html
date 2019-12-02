@@ -19,34 +19,98 @@
 
 			<!-- NAME FIELD -->
 			<div class="form-field">
-				<label for="field" class="label--required">Name</label>
-				<section>
-					<svg class="icon icon-person"><use xlink:href="#icon-person"></use></svg>
-					<input id="field" required type="text" placeholder="Jane Doe" />
-				</section>
+				<label for="field" class="label--required">First Name</label>
+				<input type="text" class="form-control" placeholder="" id="first-name" required="" data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+			</div>
+			
+			<div class="form-field">
+				<label for="field" class="label--required">Last Name</label>
+				<input type="text" class="form-control" placeholder="" id="last-name" required="" data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
 			</div>
 
 			<!-- PHONE FIELD -->
 			<div class="form-field">
-				<label for="phone" class="label--required">Phone</label>
-				<section>
-					<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
-					<input id="phone" required type="tel" placeholder="(234) 234-2342" />
-				</section>
+				<label for="field">Phone</label>
+				<input type="text" class="form-control" placeholder="" id="phone">
+                <p class="help-block text-danger"></p>
 			</div>
 
 			<!-- EMAIL FIELD -->
 			<div class="form-field">
-				<label for="email" class="label--required">Email</label>
+				<label for="field" class="label--required">Email</label>
+				<input type="text" class="form-control" placeholder="" id="email" required="" data-validation-required-message="Please enter your email.">
+                <p class="help-block text-danger"></p>
+			</div>
+			
+			<div class="form-group"> 
+				<label for="State" class="label--required">State</label>
 				<section>
-					<svg class="icon icon-mail_outline"><use xlink:href="#icon-mail_outline"></use></svg>
-					<input id="email" required type="email" placeholder="somebody@me.com" />
+						<div class="input-group">
+							<span class="input-group-addon">
+							<i class="glyphicon glyphicon-list"></i></span>
+						<select name="state" class="form-control selectpicker" >
+						  <option value=" " >Please select your state</option>
+						  <option>Alabama</option>
+						  <option>Alaska</option>
+						  <option>Arizona</option>
+						  <option>Arkansas</option>
+						  <option>California</option>
+						  <option>Colorado</option>
+						  <option>Connecticut</option>
+						  <option>Delaware</option>
+						  <option>District of Columbia</option>
+						  <option>Florida</option>
+						  <option>Georgia</option>
+						  <option>Hawaii</option>
+						  <option>Idaho</option>
+						  <option>Illinois</option>
+						  <option>Indiana</option>
+						  <option>Iowa</option>
+						  <option>Kansas</option>
+						  <option>Kentucky</option>
+						  <option>Louisiana</option>
+						  <option>Maine</option>
+						  <option>Maryland</option>
+						  <option>Mass</option>
+						  <option>Michigan</option>
+						  <option>Minnesota</option>
+						  <option>Mississippi</option>
+						  <option>Missouri</option>
+						  <option>Montana</option>
+						  <option>Nebraska</option>
+						  <option>Nevada</option>
+						  <option>New Hampshire</option>
+						  <option>New Jersey</option>
+						  <option>New Mexico</option>
+						  <option>New York</option>
+						  <option>North Carolina</option>
+						  <option>North Dakota</option>
+						  <option>Ohio</option>
+						  <option>Oklahoma</option>
+						  <option>Oregon</option>
+						  <option>Pennsylvania</option>
+						  <option>Rhode Island</option>
+						  <option>South Carolina</option>
+						  <option>South Dakota</option>
+						  <option>Tennessee</option>
+						  <option>Texas</option>
+						  <option>Utah</option>
+						  <option>Vermont</option>
+						  <option>Virginia</option>
+						  <option>Washington</option>
+						  <option>West Virginia</option>
+						  <option>Wisconsin</option>
+						  <option>Wyoming</option>
+						</select>
+					  </div>
 				</section>
 			</div>
+			
 			<!-- BUTTONS -->
 			<div class="form-buttons">
-				<button type="submit" class="a-btn--filled">Sign-up!</button>
-				<button class="a-btn">Log in</button>
+				<button type="submit" class="btn btn-xl">Register</button>
 			</div>
 
 		</form>
