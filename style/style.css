@@ -340,7 +340,7 @@ header {
     color: #fff;
     background-attachment: scroll;
     /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Capitol_at_Dusk_2.jpg/2880px-Capitol_at_Dusk_2.jpg);*/
-	background-image: url(https://cdn.wallpapersafari.com/55/80/XbplfQ.jpg);
+	background-image: url(../images/Cover.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -741,7 +741,7 @@ section h3.section-subheading {
 
 section#contact {
     background-color: #222;
-    background-image: url(https://unsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&auto=format&s=986aaa92169d4e97975fa66ebd60bafd);
+    background-image: url(../images/USA.jpeg);
     background-position: center;
     background-repeat: no-repeat;
 }

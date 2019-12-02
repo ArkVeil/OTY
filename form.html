@@ -13,7 +13,7 @@
 </head>
 <body>
 	<main>
-		<form id="registerForm" action="./action.php" method="post">
+		<form id="registerForm" action="https://ovr.govote.tn.gov/" target="_blank" method="post">
 			<h1>Voter Registration</h1>
 
 			<!-- NAME FIELD -->
@@ -111,10 +111,11 @@
 			<!-- BUTTONS -->
 			<div class="form-buttons" style="text-align: center;">
 				<label for="submitButton">You will be redirected to your state's voting registration site.</label>
-				<button name="submitButton" formaction="https://ovr.govote.tn.gov/" id="submitButton" type="submit" class="page-scroll btn btn-xl" style="display: inline-block">Register Now</button>
+				<button name="submitButton"   onclick="increment()" id="submitButton" type="submit" class="page-scroll btn btn-xl" style="display: inline-block">Register Now</button>
 			</div>
 
 		</form>
+		<button name="test" onclick="increment()"  class="page-scroll btn btn-xl"> test</button>
 	</main>
 		<script src="/js/w3c.js"></script>
 
