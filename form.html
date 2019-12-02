@@ -5,52 +5,52 @@
   <title>Register to Vote</title>
   <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css'>
 <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel='stylesheet'  type='text/css'>
 <link href="./style/form.css" rel="stylesheet" type='text/css'>
-
+<script type="text/javascript" src='script.js'> </script>
 
 </head>
 <body>
-
 	<main>
-		<form>
+		<form id="registerForm" action="./action.php" method="post">
 			<h1>Voter Registration</h1>
 
 			<!-- NAME FIELD -->
 			<div class="form-field">
-				<label for="field" class="label--required">First Name</label>
-				<input type="text" class="form-control" placeholder="" id="first-name" required="" data-validation-required-message="Please enter your name.">
+				<label for="firstName" class="label--required">First Name</label>
+				<input id="firstName" type="text" class="form-control" placeholder="" name="firstName" required="" data-validation-required-message="Please enter your name.">
                 <p class="help-block text-danger"></p>
 			</div>
+
 			
 			<div class="form-field">
-				<label for="field" class="label--required">Last Name</label>
-				<input type="text" class="form-control" placeholder="" id="last-name" required="" data-validation-required-message="Please enter your name.">
+				<label for="lastName" class="label--required">Last Name</label>
+				<input id="lastName" type="text" class="form-control" placeholder="" name="lastName" required="" data-validation-required-message="Please enter your name.">
                 <p class="help-block text-danger"></p>
 			</div>
 
 			<!-- PHONE FIELD -->
 			<div class="form-field">
-				<label for="field">Phone</label>
-				<input type="text" class="form-control" placeholder="" id="phone">
+				<label for="phone">Phone</label>
+				<input id="phone" type="text" class="form-control" placeholder="" name="phone">
                 <p class="help-block text-danger"></p>
 			</div>
 
 			<!-- EMAIL FIELD -->
 			<div class="form-field">
-				<label for="field" class="label--required">Email</label>
-				<input type="text" class="form-control" placeholder="" id="email" required="" data-validation-required-message="Please enter your email.">
+				<label for="email" class="label--required">Email</label>
+				<input id="email" type="text" class="form-control" placeholder="" name="email" required="" data-validation-required-message="Please enter your email.">
                 <p class="help-block text-danger"></p>
 			</div>
 			
 			<div class="form-group"> 
-				<label for="State" class="label--required">State</label>
+				<label for="state" class="label--required">State</label>
 				<section>
 						<div class="input-group">
 							<span class="input-group-addon">
 							<i class="glyphicon glyphicon-list"></i></span>
-						<select name="state" class="form-control selectpicker" >
+						<select id="state" name="state" class="form-control selectpicker" >
 						  <option value=" " >Please select your state</option>
 						  <option>Alabama</option>
 						  <option>Alaska</option>
@@ -109,10 +109,16 @@
 			</div>
 			
 			<!-- BUTTONS -->
-			<div class="form-buttons">
-				<button type="submit" class="btn btn-xl">Register</button>
+			<div class="form-buttons" style="text-align: center;">
+				<label for="submitButton">You will be redirected to your state's voting registration site.</label>
+				<button name="submitButton" formaction="https://ovr.govote.tn.gov/" id="submitButton" type="submit" class="page-scroll btn btn-xl" style="display: inline-block">Register Now</button>
 			</div>
 
 		</form>
 	</main>
+		<script src="/js/w3c.js"></script>
+
 </body>
+</html>
+
+<!-- formaction="https://ovr.govote.tn.gov/" -->

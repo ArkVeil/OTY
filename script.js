@@ -17,3 +17,13 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+function saveValues() {
+    var record = ""
+            +       document.getElementById('firstName');
+            + "," + document.getElementById('lastName');
+            + "," + document.getElementById('phone');
+			+ "," + document.getElementById('email');
+            + "\n";
+
+}
